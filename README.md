@@ -7,7 +7,7 @@ This repository hosts two **independent Streamlit applications** built to analyz
 
 ---
 
-## 📊 Stock Visualization Dashboard (`stock_analysis.py`)
+## 📊 Stock Visualization Dashboard 
 
 ### 🎯 Purpose:
 An intuitive dashboard for visual exploration of Maruti stock performance through multiple financial insights.
@@ -26,7 +26,7 @@ An intuitive dashboard for visual exploration of Maruti stock performance throug
 
 ---
 
-## ⚡ Volatility Alert System (`threshold.py`)
+## ⚡ Volatility Alert System 
 
 ### 🎯 Purpose:
 Detect and highlight days where Maruti stock experienced unusual volatility based on user-defined thresholds.
