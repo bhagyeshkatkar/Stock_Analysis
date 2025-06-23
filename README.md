@@ -1,69 +1,63 @@
-# 📈 Maruti Stock Analysis & Volatility Detection Dashboard
+# 📈 Maruti Stock Analysis & Volatility Detection Dashboards
 
-This repository presents a dual-dashboard application built using **Streamlit**, offering powerful tools to explore and analyze historical stock data for **Maruti Suzuki**. It consists of two interactive Python applications:
-
-1. **Stock Visualization Dashboard** – For visual and statistical exploration of Maruti stock performance.
-2. **Volatility Alert System** – For detecting and highlighting days with unusual volatility.
-
-The project uses real stock data (`Maruti.csv`) to deliver insights through a clean, modern UI.
+This repository hosts two **independent Streamlit applications** built to analyze historical stock data of **Maruti Suzuki**. Each app serves a distinct purpose and uses the same CSV dataset (`Maruti.csv`) for analysis.
 
 ---
 
-## 📊 1. Stock Visualization Dashboard (`stock_analysis.py`)
+## 📊 Stock Visualization Dashboard (`stock_analysis.py`)
 
 ### 🎯 Purpose:
-An interactive dashboard for understanding stock behavior across multiple dimensions – price trends, volume activity, correlations, and top-performing days.
+An intuitive dashboard for visual exploration of Maruti stock performance through multiple financial insights.
 
 ### 🔍 Key Features:
-- **Daily Price Range**: Visualizes the daily spread between the High and Low prices.
-- **Performance Trend**: Tracks closing prices to show trends over the selected year.
-- **Volume Over Time**: Analyzes trading volume fluctuations.
-- **Top N Days by Closing Price**: Lists and visualizes the best-performing days based on close prices.
-- **Correlation Heatmap**: Shows statistical relationships between High, Low, and Volume.
+- **Daily Price Range**: View the daily spread between High and Low prices.
+- **Stock Performance Trend**: Track year-wise changes in closing prices.
+- **Volume Over Time**: Analyze trading volume patterns across the year.
+- **Top N Days by Closing Price**: Identify the best-performing trading days.
+- **Correlation Heatmap**: Explore relationships between High, Low, and Volume.
 
-### 🧠 How it works:
-- A sidebar allows users to **select a year** and **choose an insight**.
-- Each insight loads a customized plot or table relevant to the stock data.
-- Data is filtered dynamically to match user input.
+### 🧠 How It Works:
+- A sidebar allows selection of a **year** and desired **insight**.
+- Each insight displays a tailored visualization or table.
+- All charts update dynamically based on user input.
 
 ---
 
-## ⚡ 2. Volatility Alert System (`threshold.py`)
+## ⚡ Volatility Alert System (`threshold.py`)
 
 ### 🎯 Purpose:
-Identify and visualize volatile trading days when the price movement exceeds a user-defined percentage threshold.
+Detect and highlight days where Maruti stock experienced unusual volatility based on user-defined thresholds.
 
 ### 🔍 Key Features:
-- **Custom Year & Threshold Selection** via sidebar.
-- **Volatile Days Table**: Lists days where daily % change in closing price exceeds the selected threshold.
-- **Time-Series Plot**: Highlights volatile days visually on a plot of daily price changes.
-- **Dynamic Thresholding**: Users can experiment with different levels of sensitivity.
+- **Customizable Threshold (%)**: Adjust sensitivity of what qualifies as volatile.
+- **Volatile Days Table**: Lists days with daily % change beyond the threshold.
+- **Visual Alerts**: Highlights volatile days on a time-series line chart.
+- **Year Filter**: Focus analysis on a particular year.
 
-### 🧠 How it works:
-- Computes **daily % change** in closing prices.
-- Marks days as volatile when the change exceeds the specified threshold (positive or negative).
-- Highlights those days in red on a line chart for easy detection.
+### 🧠 How It Works:
+- Calculates daily percentage change in closing prices.
+- Flags days as volatile when absolute % change exceeds the selected threshold.
+- Plots daily % changes and visually marks volatile days in red.
 
 ---
 
 ## 📁 Files Included
 
-| File | Description |
-|------|-------------|
-| `stock_analysis.py` | Streamlit dashboard for visual stock insights |
-| `threshold.py` | Streamlit app for detecting and displaying volatile stock days |
-| `Maruti.csv` | Historical stock data of Maruti Suzuki used by both apps |
+| File              | Description                                              |
+|-------------------|----------------------------------------------------------|
+| `stock_analysis.py` | Streamlit app for visualizing stock trends              |
+| `threshold.py`      | Streamlit app for volatility detection                  |
+| `Maruti.csv`        | Historical stock data of Maruti Suzuki (used by both)  |
 
 ---
 
-## 💾 Dataset Details
+## 💾 Dataset Information
 
-- **Source**: Historical stock data of Maruti Suzuki (CSV format)
 - **Filename**: `Maruti.csv`
+- **Format**: CSV
 - **Columns Used**: `Date`, `Open`, `High`, `Low`, `Close`, `Volume`
-- **Date Format**: YYYY-MM-DD
-
-The dataset should be placed in the same folder as the `.py` files.
+- **Date Format**: `YYYY-MM-DD`
+- Ensure the dataset is in the same directory as the `.py` files when running the apps.
 
 ---
 
@@ -71,7 +65,7 @@ The dataset should be placed in the same folder as the `.py` files.
 
 ### 🔧 Requirements
 
-Install dependencies using pip:
+Install required libraries using pip:
 
 ```bash
 pip install streamlit pandas matplotlib seaborn numpy
