@@ -1,4 +1,4 @@
-# 📈 Maruti Stock Analysis & Volatility Detection Dashboards
+# Maruti Stock Analysis & Volatility Detection Dashboards
 
 This repository hosts two **independent Streamlit applications** built to analyze historical stock data of **Maruti Suzuki**. Each app serves a distinct purpose and uses the same CSV dataset (`Maruti.csv`) for analysis.
 
